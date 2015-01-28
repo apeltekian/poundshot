@@ -1,0 +1,24 @@
+Poundshot, a simple top-down shoot-em-up game
+
+Copyright (C) Robert Cochran 2015
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 3
+of the License, or (at your option) any later version.
+
+Build Instructions
+-----
+Depends on libncurses and the standard POSIX library. libncurses should
+be installable with your local package manager - refer to your system's
+documentation for details. Once installed, type 'make' to build.
+
+Controls
+-----
+WASD - Move in the cardinal directions
+IJKL - Shoot in the cardinal directions
+
+Notes
+-----
+This project is *old*, and thus really messy and badly coded.
+Putting it out there for anyone interested.
