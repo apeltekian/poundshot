@@ -20,5 +20,40 @@ IJKL - Shoot in the cardinal directions
 
 Notes
 -----
-This project is *old*, and thus really messy and badly coded.
-Putting it out there for anyone interested.
+There are several things you can do to clean up this project :
+
+* Some places have /waaay/ too much indentation. Refactor the logic
+to reduce the amount of nested blocks.
+
+* It would probably be better to replace the key codes in l_char() and
+l_bullet() with some sort of symbolic constant. Good options are #define's
+or an enum.
+
+* Same thing for the direction codes, actually. Those need it too. Stay
+consistant with your choice of #define or enum.
+
+* Maybe do some math to make d_explosion() a smaller function?
+
+* It's good style to include a comment at the beginning of a function
+to explain its purpose, function parameters, and return values.
+
+* If you're feeling *really* adventurous, then you can remove all of the
+global variables and use only local variables via function parameters.
+(This would be complicated, and I would recommend doing this last, if at
+all. Don't worry about it if you feel you aren't up to it)
+
+* Succeeded in removing all the global variables? Great! Now you can split
+up the functions into different files based on their purpose.
+
+Need help?
+----------
+
+Both myself and @JoshuaBrockschmidt would be more than happy to answer any
+questions you have, especially about the codebase itself, which you can't
+find easily by web search. Do please, however, try a web search first for
+things not directly related to the codebase. Even if you are unable to figure
+out what you need, it will hopefully still teach you something, and telling
+us that you've done these things will help us help you.
+
+Good luck and happy hacking!
+~@RobertCochran
