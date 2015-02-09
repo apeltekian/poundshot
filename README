@@ -20,6 +20,8 @@ IJKL - Shoot in the cardinal directions
 
 Notes
 -----
+-This project is *old*, and thus really messy and badly coded.
+
 There are several things you can do to clean up this project :
 
 * Some places have /waaay/ too much indentation. Refactor the logic
