@@ -52,7 +52,7 @@ struct Monster_t *mon_list;
 static char livestxt[] = "Lives - ";
 static char scoretxt[] = "Score - ";
 static char title[] = "Poundshot";
-static char version[] = "1.0.0";
+static char version[] = "1.0.3";
 
 int key;
 
@@ -281,7 +281,7 @@ void l_enemy(void)
 				
 
 				if ((tempx == bx) && (tempy == by)) {
-					score += 50;
+					score += 65;
 					bullet = 0;
 					mon_list[i].x = -1;
 					mon_list[i].y = -1;
@@ -410,17 +410,17 @@ void l_hit (void)
 
 void d_explosion(void)
 {
-	sleep(1);
+	usleep(600000);
 	// Drawing of explosion
 	mvaddch(py, px, '*');
 	refresh();
-	sleep(1);
+	usleep(600000);
 	mvaddch(py + 1, px, '*');
 	mvaddch(py - 1, px, '*');
 	mvaddch(py, px + 1, '*');
 	mvaddch(py, px - 1, '*');
 	refresh();
-	sleep(1);
+	usleep(600000);
 	mvaddch(py + 2, px, '*');
 	mvaddch(py - 2, px, '*');
 	mvaddch(py, px + 2, '*');
@@ -430,18 +430,18 @@ void d_explosion(void)
 	mvaddch(py - 1, px + 1, '*');
 	mvaddch(py - 1, px - 1, '*');
 	refresh();
-	sleep(1);
+	usleep(600000);
 
 	// Un-drawing
 	mvaddch(py, px, ' ');
 	refresh();
-	sleep(1);
+	usleep(600000);
 	mvaddch(py + 1, px, ' ');
 	mvaddch(py - 1, px, ' ');
 	mvaddch(py, px + 1, ' ');
 	mvaddch(py, px - 1, ' ');
 	refresh();
-	sleep(1);
+	usleep(600000);
 	mvaddch(py + 2, px, ' ');
 	mvaddch(py - 2, px, ' ');
 	mvaddch(py, px + 2, ' ');
@@ -451,5 +451,5 @@ void d_explosion(void)
 	mvaddch(py - 1, px + 1, ' ');
 	mvaddch(py - 1, px - 1, ' ');
 	refresh();
-	sleep(1);
+	usleep(600000);
 }
