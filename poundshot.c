@@ -451,5 +451,5 @@ void d_explosion(void)
 	mvaddch(py - 1, px + 1, ' ');
 	mvaddch(py - 1, px - 1, ' ');
 	refresh();
-	usleep(600000);
+	usleep(700000);
 }
